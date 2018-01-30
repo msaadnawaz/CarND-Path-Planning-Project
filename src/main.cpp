@@ -272,12 +272,12 @@ int main() {
 					}
 					else
 					{
-						ref_vel = 49.5
+						ref_vel = 49.5;
 					}
 				}
 				else
 				{
-					ref_vel = 49.5
+					ref_vel = 49.5;
 				}
 			}
 
