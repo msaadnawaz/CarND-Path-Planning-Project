@@ -268,7 +268,7 @@ int main() {
 
 					if ((check_car_s > car_s) && (check_car_s - car_s) < 30)
 					{
-						ref_vel = check_speed - 2;
+						ref_vel = check_speed - 20;
 					}
 				}
 			}
