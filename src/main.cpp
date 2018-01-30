@@ -245,6 +245,7 @@ int main() {
 
 			//reference velocity
 			double ref_vel = 49.5; //in mph
+			
 			int prev_size = previous_path_x.size();
 
 			if (prev_size > 0)
@@ -257,7 +258,7 @@ int main() {
 			for (int i = 0; i < sensor_fusion.size(); i++)
 			{
 				float d = sensor_fusion[i][6];
-				if (d < (2 + 4 * lane + 2) && d > (2 + 4 * lane + 2))
+				if (d < (2 + 4 * lane + 2) && d > (2 + 4 * lane - 2))
 				{
 					double vx = sensor_fusion[i][3];
 					double vy = sensor_fusion[i][4];
