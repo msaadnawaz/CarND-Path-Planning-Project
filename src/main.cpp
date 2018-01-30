@@ -256,7 +256,7 @@ int main() {
 
 			for (int i = 0; i < sensor_fusion.size(); i++)
 			{
-				float d = sensor_fusions[i][6];
+				float d = sensor_fusion[i][6];
 				if (d < (2 + 4 * lane + 2) && d > (2 + 4 * lane + 2))
 				{
 					double vx = sensor_fusion[i][3];
