@@ -271,15 +271,15 @@ int main() {
 					{
 						ref_vel = 29.5;
 					}
-					else
+					/*else
 					{
 						ref_vel = 49.5;
-					}
+					}*/
 				}
-				else
+				/*else
 				{
 					ref_vel = 49.5;
-				}
+				}*/
 			}
 
 			vector<double> ptsx;
