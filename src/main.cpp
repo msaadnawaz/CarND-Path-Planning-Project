@@ -268,19 +268,15 @@ int main() {
 					check_car_s += (double)prev_size * 0.02 * check_speed;
 
 					if ((check_car_s > car_s) && (check_car_s - car_s) < 30)
-					{
-						ref_vel = 29.5;
-					}
-					/*else
-					{
-						ref_vel = 49.5;
-					}*/
+						too_close = true;					
 				}
-				/*else
-				{
-					ref_vel = 49.5;
-				}*/
+				
 			}
+
+			if (too_close)
+				ref_vel -= 0.224;
+			else
+				ref_vel += 0.224;
 
 			vector<double> ptsx;
 			vector<double> ptsy;
