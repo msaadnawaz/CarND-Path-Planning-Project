@@ -179,6 +179,12 @@ int main() {
   // The max s value before wrapping around the track back to 0
   double max_s = 6945.554;
 
+  //start in middle lane || 2 | 1 | 0 ||
+  int lane = 1;
+
+  //reference velocity
+  double ref_vel = 0; //in mph
+
   ifstream in_map_(map_file_.c_str(), ifstream::in);
 
   string line;
@@ -240,12 +246,6 @@ int main() {
           	// Sensor Fusion Data, a list of all other cars on the same side of the road.
           	auto sensor_fusion = j[1]["sensor_fusion"];
 			
-			//start in middle lane || 2 | 1 | 0 ||
-			int lane = 1;
-
-			//reference velocity
-			double ref_vel = 0; //in mph
-			
 			int prev_size = previous_path_x.size();
 
 			if (prev_size > 0)
@@ -267,7 +267,7 @@ int main() {
 
 					check_car_s += (double)prev_size * 0.02 * check_speed;
 
-					if ((check_car_s > car_s) && (check_car_s - car_s) < 30)
+					if ((check_car_s > car_s) && ((check_car_s - car_s) < 30))
 						too_close = true;					
 				}
 				
