@@ -317,7 +317,8 @@ int main() {
 							goal_lane = lane;
 					}
 					else
-						lane = goal_lane;
+						if(ref_vel>35)
+							lane = goal_lane;
 				}
 			}
 
