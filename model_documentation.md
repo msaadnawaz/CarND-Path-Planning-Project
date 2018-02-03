@@ -6,4 +6,4 @@
 
 ## Trajectory Generation
 
-![image1](state_machine.jpg?raw=true "State Machine")
+![alt_text](State_machine.jpg?raw=true "State Machine")
