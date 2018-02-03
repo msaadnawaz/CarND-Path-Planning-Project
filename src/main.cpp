@@ -288,7 +288,7 @@ int main() {
 
 						check_car_s += (double)prev_size * 0.02 * check_speed;
 
-						if (abs(check_car_s - car_s) < 5)
+						if (abs(check_car_s - car_s) < 10)
 						{
 							car_in_danger_zone = true;
 						}
