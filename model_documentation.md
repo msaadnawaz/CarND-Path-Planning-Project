@@ -1,9 +1,10 @@
 # Documentation:
 
-## Prediction
+## Prediction:
 
-## Behavior Planning
-
-## Trajectory Generation
+## Behavior Planning:
 
 ![alt_text](State_machine.jpg?raw=true "State Machine")
+
+## Trajectory Generation:
+
