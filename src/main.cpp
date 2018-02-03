@@ -288,7 +288,7 @@ int main() {
 
 						check_car_s += (double)prev_size * 0.02 * check_speed;
 
-						if (abs(check_car_s - car_s) < 30)
+						if (abs(check_car_s - car_s) < 5)
 						{
 							car_in_danger_zone = true;
 						}
@@ -299,7 +299,7 @@ int main() {
 
 			if (too_close)
 			{
-				ref_vel -= 0.224;
+				ref_vel -= 0.5;
 				if (goal_lane == lane)
 				{
 					if (lane > 0)
@@ -322,7 +322,7 @@ int main() {
 			}
 
 			else if(ref_vel < 49.5)
-				ref_vel += 0.224;
+				ref_vel += 0.5;
 
 			
 
