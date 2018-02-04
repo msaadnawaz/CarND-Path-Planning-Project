@@ -371,7 +371,7 @@ int main() {
 			vector<double> next_wp2 = getXY(car_s + 90, (2 + 4 * lane), map_waypoints_s, map_waypoints_x, map_waypoints_y);
 
 			ptsx.push_back(next_wp0[0]);
-			ptsx.push_back(next_wp1[0]);+
+			ptsx.push_back(next_wp1[0]);
 			ptsx.push_back(next_wp2[0]);
 
 			ptsy.push_back(next_wp0[1]);
